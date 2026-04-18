@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 标题卡片 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/header_background"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✅ 识别结果"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- 识别信息卡片 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:elevation="2dp">
+
+            <!-- 姓名 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="👤 姓名"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <!-- 性别 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="⚧ 性别"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <!-- 民族 -->
+            <LinearLayout
+                android:id="@+id/layout_nation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="🏛 民族"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_nation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <!-- 出生日期 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="🎂 出生日期"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <!-- 户籍地址 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🏠 户籍地址"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+
+            <!-- 身份证号 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="🆔 身份证号"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_id_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#D32F2F"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- 签发机关（背面） -->
+            <LinearLayout
+                android:id="@+id/layout_authority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="🏢 签发机关"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_authority"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+            <!-- 有效期限（背面） -->
+            <LinearLayout
+                android:id="@+id/layout_valid_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/info_item_background"
+                android:padding="12dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="📅 有效期限"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/tv_valid_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_export"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="💾 导出数据"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="🔙 返回"
+                android:textSize="16sp"
+                android:backgroundTint="#607D8B"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

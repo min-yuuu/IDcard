@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- 标题行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:background="@drawable/index_badge"
+            android:padding="8dp"
+            android:minWidth="40dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/tv_side"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="人像面"
+                android:textSize="13sp"
+                android:textColor="#607D8B"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="识别成功"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 识别信息 -->
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/info_item_background"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名：张三"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证号：110101199001011234"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- 错误信息 -->
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="错误信息"
+        android:textSize="14sp"
+        android:textColor="#F44336"
+        android:background="#FFEBEE"
+        android:padding="12dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
