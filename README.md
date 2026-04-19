@@ -98,7 +98,8 @@ SECRET_KEY
 点击"开始识别"
 
 点击"查看结果"进入详情页
-<img width="1080" height="2120" alt="69fe778184a2744b5bfddf5c01204ba1" src="https://github.com/user-attachments/assets/814d2bad-fbe2-4f35-80bd-dacf211ae1e5" />
+<img width="1080" height="2120" alt="f935c5e94cfb74252145eaf5ffa388b1" src="https://github.com/user-attachments/assets/fc620a34-61fc-4b80-821c-b5436b0d316a" />
+
 
 在结果页点击"导出"可分享 .txt 文件
 <img width="1080" height="2204" alt="a998286bc20d893f8f96cd22de5318eb" src="https://github.com/user-attachments/assets/9da6c8fc-06ed-4b60-9781-c269145d3237" />
